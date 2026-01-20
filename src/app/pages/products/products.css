@@ -30,6 +30,13 @@
   margin-bottom: 12px;
 }
 
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
 .price {
   font-weight: bold;
   margin: 10px 0;
