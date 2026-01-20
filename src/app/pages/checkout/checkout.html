@@ -1,0 +1,19 @@
+<h2>Checkout</h2>
+
+<p *ngIf="cartItems.length === 0">
+  Your cart is empty
+</p>
+
+<div *ngIf="cartItems.length > 0">
+  <ul>
+    <li *ngFor="let item of cartItems">
+      {{ item.name }} – €{{ item.price }}
+    </li>
+  </ul>
+
+  <h3>Total: €{{ total }}</h3>
+
+  <button (click)="placeOrder()">
+    Place Order
+  </button>
+</div>

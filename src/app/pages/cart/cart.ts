@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule} from '@angular/common';
+import { RouterModule } from '@angular/router'; // ✅ HERE
 import { CartService } from '../../services/cart.service'; // path to your service
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './cart.html',
   styleUrls: ['./cart.css'],
 })
